@@ -1,0 +1,797 @@
+<!--Head of all html pages-->
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lehigh Aerospace Club</title>
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/8.3.1/firebase-app.js"></script>
+  <!-- include only the Firebase features as you need -->
+  <script defer src="/__/firebase/8.3.1/firebase-auth.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-database.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-firestore.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-functions.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-messaging.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-storage.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-analytics.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-remote-config.js"></script>
+  <script defer src="/__/firebase/8.3.1/firebase-performance.js"></script>
+  <!-- 
+     initialize the SDK after all desired features are loaded, set useEmulator to false
+     to avoid connecting the SDK to running emulators.
+   -->
+  <script defer src="/__/firebase/init.js?useEmulator=false"></script>
+  <script src="https://kit.fontawesome.com/4e06492cb8.js" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="AboutPhotos/lehighLogo2.png" type="image">
+</head>
+
+<!--Header-->
+
+<body>
+  <section class="header2">
+    <!--Image-->
+    <div class="head_img mid">
+      <h1>Meet The Team</h1>
+    </div>
+
+    <!--For mobile!-->
+
+
+    <!--Navbar-->
+    <header class="main_h2">
+
+      <div class="row ml-0">
+
+        <div class="modal-content">
+          <div class="mySlides">
+            <a href="index.html">
+              <img src="glow-small.png">
+            </a>
+          </div>
+        </div>
+
+        <div class="mobile-toggle">
+          <span class="burger-lines"></span>
+        </div>
+
+        <nav>
+          <ul>
+            <li><a href="index.html" class="middle">Home</a></li>
+            <li><a href="about.html" class="middle">About</a></li>
+            <li><a href="team.html" class="middle">Team</a></li>
+            <li><a href="projects.html" class="middle">projects</a></li>
+            <!--<li><a href="#" class="middle">Network</a></li>-->
+          </ul>
+        </nav>
+      </div>
+
+    </header>
+
+    <!--Executives Section-->
+    <div class="background1">
+      <div id="cubeContainer">
+        <div id="cubeWrapper">
+          <div class="head">
+            <h2>Executive Board</h2>
+          </div>
+          <div class="info">
+            <p>Tap on photo for more</p>
+          </div>
+          <div id="cubes">
+            <div class="cube emilyWalsh">
+              <div class="name">
+                <h1>Emily Walsh '26</h1>
+                <p>Secretary</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/emily-walsh-3494a3246/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube aliyahMcNeil">
+              <div class="name">
+                <h1>Aliyah McNeil '26</h1>
+                <p>VP Finance</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/aliyah-mcneil-60999a263/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube haydenKasberger">
+              <div class="name">
+                <h1>Hayden Kasberger '25</h1>
+                <p>VP Operations</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/hayden-kasberger-46754a221/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube lexyGuazzone">
+              <div class="name">
+                <h1>Alexandra Guazzone '26</h1>
+                <p>VP Communications</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/alexandra-guazzone-179273253/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube alliKemble">
+              <div class="name">
+                <h1>Alli Kemble '26</h1>
+                <p>President</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/alli-kemble/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End Executives Section-->
+      <!--Senior Officers Section-->
+    <div class="background1">
+      <div id="cubeContainer">
+        <div id="cubeWrapper">
+          <div class="head">
+            <h2>Senior Officers</h2>
+          </div>
+          <div id="cubes">
+            <div class="cube kevinJun">
+              <div class="name">
+                <h1>Kevin Jun '25</h1>
+                <p>President 2022-2023</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/kevin-jun-11462b228/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube danielDemasi">
+              <div class="name">
+                <h1>Daniel DeMasi '25</h1>
+                <p>VP Finance 2022-2023</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="http://linkedin.com/in/daniel-demasi-9a7a48225" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube abdulSyed">
+              <div class="name">
+                <h1>Abdul-Saboor Syed '25</h1>
+                <p>VP Operations 2022-2023</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/abdul-saboor-syed-40997b205/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube jonathanCranley">
+              <div class="name">
+                <h1>Jonathan Cranley '25</h1>
+                <p>VP Comms 2022-2023</p>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/jonathan-cranley-85632922b/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!--End Senior Officers Section-->
+      <!--Member Section-->
+      <div id="cubeContainer">
+        <div id="cubeWrapper">
+          <div class="head">
+            <h2>Current Members</h2>
+          </div>
+          <div id="cubes">
+            <!--Beginning of 2024 Section-->
+            <div class="cube nicholasPikul">
+              <div class="name">
+                <h1>Nicholas Pikul '24</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/nicholas-pikul-4846451b8" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube kentBowers">
+              <div class="name">
+                <h1>Kent Bowers '24</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/kent-bowers/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <!--End of 2024 Section-->
+            <!--Beginning of 2025 Section-->
+            <div class="cube harryJenkins">
+              <div class="name">
+                <h1>Harry Jenkins '25</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="http://www.linkedin.com/in/harryj53" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube derekSliker">
+              <div class="name">
+                <h1>Derek Sliker '25</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/mwlite/in/derek-sliker-4009a8229" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube brennanCruz">
+              <div class="name">
+                <h1>Brennan Cruz '25</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/brennan-cruz-a1420b217/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube nixHuang">
+              <div class="name">
+                <h1>Nix Huang '25</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/nix-huang-066902168/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube dylanMahoney">
+              <div class="name">
+                <h1>Dylan Mahoney '25</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/dylanmahoney131/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube default">
+              <div class="name">
+                <h1>David Li '25</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/404/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <!--End of 2025 Section-->
+            <!--Beginning of 2026 Section-->
+            <div class="cube davidShunk">
+              <div class="name">
+                <h1>David Shunk '26</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/david-shunk/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube wyattWilkerson">
+              <div class="name">
+                <h1>Wyatt Wilkerson '26</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/in/wyatt-wilkerson-68054123b/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="cube default">
+              <div class="name">
+                <h1>Rose Falletta '26</h1>
+              </div>
+              <div class="innerBorder"></div>
+              <div class="darken"></div>
+              <div class="content">
+                <ul>
+                  <li><a href="https://www.linkedin.com/404/" target="_blank"><span
+                        class="fab fa-linkedin fa-2x"></span></a></li>
+                </ul>
+              </div>
+            </div>
+            <!--End of 2026 Section-->
+            <!--Beginning of 2027 Section-->
+
+            <!--End of 2027 Section-->
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!--End Member Section-->
+    <!--Advisor Section-->
+    <div id="cubeContainer">
+      <div id="cubeWrapper">
+        <div class="head">
+          <h2>Advisors</h2>
+        </div>
+        <div id="cubes">
+          <div class="cube drHart">
+            <div class="name">
+              <h1>DR. HART '68</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li>
+                  <p>Dr. Hart is a former NASA astronaut who flew on the Space Shuttle mission STS-41-C. He has also
+                    worked
+                    on the technical staff at Bell Telephone Labs and served at AT&T as a satellite executive.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube drGrenestedt">
+            <div class="name">
+              <h1>DR. GRENESTEDT</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li>
+                  <p>Dr. Grenestedt is a composite materials and aircraft expert whose design work has ranged from
+                    stealth
+                    ship design to cutting-edge dynamic soaring research.</p>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--End Advisor Section-->
+    <!--Begin Alumni Section-->
+    <div id="cubeContainer">
+      <div id="cubeWrapper">
+        <div class="head">
+          <h2>Alumni</h2>
+        </div>
+        <div id="cubes">
+          <!--Start of 2023 Section-->
+          <div class="cube default">
+            <div class="name">
+              <h1>Ryan Matthiessen '23</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/ryan-matthiessen/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube ericTkach">
+            <div class="name">
+              <h1>Eric Tkach '23</h1>
+              <p>Treasurer 2020-2021</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/erictkach/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube alexPerlman">
+            <div class="name">
+              <h1>Alex Perlman '23</h1>
+              <p>President 2022</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/alexperlman/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube yukangKuang">
+            <div class="name">
+              <h1>Yukang Kuang '23</h1>
+              <p>VP 2022</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/yukangkuang" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube mattTallo">
+            <div class="name">
+              <h1>Matt Tallo '23</h1>
+              <p>Treasurer 2022</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/matt-tallo-47917a1ba/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube danielKim">
+            <div class="name">
+              <h1>Daniel Kim '23</h1>
+              <p>Secretary 2020-2021</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/404/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--End of 2023 Section-->
+          <!--Beginning of 2022 Section-->
+          <div class="cube michaelDemasi">
+            <div class="name">
+              <h1>Michael DeMasi '22</h1>
+              <p>President 2019-2021</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/michaeldemasi77/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube cameronOsborn">
+            <div class="name">
+              <h1>Cameron Osborn '22</h1>
+              <p>VP 2020-2021</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/cameron-osborn-0a4241217/"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube abiolaOladipo">
+            <div class="name">
+              <h1>Abiola Oladipo '22</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/abiola-a-oladipo/"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube cindyXu">
+            <div class="name">
+              <h1>XinLing (Cindy) Xu '22</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/xinling-cindy-xu-444071177/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--End of 2022 Section-->
+          <!--Beginning of 2021 Section-->
+          <div class="cube ethanImler">
+            <div class="name">
+              <h1>Ethan Imler '21</h1>
+              <p>President 2017-2019</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/ethan-imler-186851179/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube nicholasLarosa">
+            <div class="name">
+              <h1>Nicholas LaRosa '21</h1>
+              <p>VP 2017-2019</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/nicholas-larosa-033951235/"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="cube default">
+            <div class="name">
+              <h1>Logan Riker '21</h1>
+              <p>VP 2019-2020</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/404/"><span class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--End of 2021 Section-->
+          <!--Beginning of 2020 Section-->
+          <div class="cube default">
+            <div class="name">
+              <h1>Izzy Cao '20</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/404/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--End of 2020 Section-->
+          <!--Beginning of 2019 Section-->
+          <div class="cube skipperErickson">
+            <div class="name">
+              <h1>Skipper Erickson '19</h1>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/skipper-erickson-01b20b95/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--End of 2019 Section-->
+          <!--Beginning of 2018 Section-->
+          <div class="cube default">
+            <div class="name">
+              <h1>Alan Bebout '18</h1>
+              <p>President 2016-2017</p>
+            </div>
+            <div class="innerBorder"></div>
+            <div class="darken"></div>
+            <div class="content">
+              <ul>
+                <li><a href="https://www.linkedin.com/in/alan-b-231577108/" target="_blank"><span
+                      class="fab fa-linkedin fa-2x"></span></a></li>
+              </ul>
+            </div>
+          </div>
+          <!--End of 2018 Section-->
+        </div>
+      </div>
+    </div>
+    <!--End Alumni Section-->
+    <div class="spacing"></div>
+    <div class="spacing2"></div>
+    </div>
+    <!--End Alternating section-->
+
+    <!--Footer-->
+    <footer class="footer-section">
+      <div class="container">
+        <div class="footer-content pt-5 pb-5">
+          <div class="row">
+            <div class="col-xl-4 col-lg-4 mb-50">
+              <div class="footer-widget">
+                <div class="footer-logo">
+                  <img src="logo white (1).png" class="img-fluid" alt="logo">
+                </div>
+                <div class="footer-text">
+                  <p>Members of the Aerospace Club enjoy the advantage of experiential learning beyond what is taught in
+                    the classroom, come join us for a great learning experience with amazing people!</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-30">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Helpful links</h3>
+                </div>
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="about.html">About</a></li>
+                  <li><a href="mailto:inaero@lehigh.edu" target="_blank">Contact</a></li>
+                  <li><a href="projects.html">Projects</a></li>
+                  <li><a href="team.html">Team</a></li>
+                  <li><a href="https://aiaa.lehigh.edu/" target="_blank">News</a></li>
+                  <li><a href="https://aiaa.lehigh.edu/" target="_blank">Network</a></li>
+                  <li><a href="https://lehigh.campuslabs.com/engage/" target="_blank">LINC</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-4 col-lg-4 col-md-6 mb-50">
+              <div class="footer-widget">
+                <div class="footer-widget-heading">
+                  <h3>Contact Us</h3>
+                </div>
+                <div class="footer-text mb-25">
+                  <p>Interested in being a part of our team?<a href="mailto:inaero@lehigh.edu" target="_blank"> Contact
+                      us</a> to learn
+                    more!</p>
+                </div>
+                <div class="footer-social-icon">
+                  <span>Social</span>
+                  <a href="https://twitter.com/AerospaceLu" target="_blank"><i
+                      class="fab fa-twitter twitter-bg fa-lg"></i></a>
+                  <a href="https://www.instagram.com/luaerospace/" target="_blank"><i
+                      class="fab fa-instagram instagram-bg fa-lg"></i></a>
+                  <a href="https://www.youtube.com/channel/UC_v8DTQQNiTufVg54HoY7tA" target="_blank"><i
+                      class="fab fa-youtube youtube-bg fa-lg"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copyright-area">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-6 col-lg-6 text-center text-lg-left">
+              <div class="copyright-text">
+                <p>Copyright &copy; 2023 by Lehigh Aerospace. Website by<a href="https://reberllc.webflow.io/"
+                    target="_blank"> Reber</a></p>
+              </div>
+            </div>
+            <div class="col-xl-6 col-lg-6 d-none d-lg-block text-right">
+              <div class="footer-menu">
+                <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="https://engineering.lehigh.edu/meche/undergraduate/student-organizations"
+                      target="_blank">Terms</a></li>
+                  <li><a href="https://engineering.lehigh.edu/meche/undergraduate/student-organizations"
+                      target="_blank">Privacy</a>
+                  </li>
+                  <li><a href="https://engineering.lehigh.edu/meche/undergraduate/student-organizations"
+                      target="_blank">Policy</a></li>
+                  <li><a href="mailto:inaero@lehigh.edu" target="_blank">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+      </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="team.js"></script>
+
+</body>
+
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script> -->
+
+<!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script> -->
+
+</html>
